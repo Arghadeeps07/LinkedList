@@ -34,7 +34,7 @@ void traverse(node *head) // This will traverse the the list and print it
 }
 node *reverse(node *head)
 {
-    if (head == NULL || head->next == NULL)
+    if (head == NULL || head->next == NULL) // Base case
         return head;
     node *newhead = reverse(head->next);
     head->next->next = head;
